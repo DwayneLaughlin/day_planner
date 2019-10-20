@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <title>Day Planner</title>
    
 </head>
@@ -17,111 +18,65 @@
 <br>
 
     <div class="container" id = "hourBox">
-        <div class="row">
-            <div id="morning9" class="col-md-1 text-left">
-                9AM
-            </div>
-            <textarea class="col-md-10" type="input">
-                
-            </textarea>
-            <div class="col-md text-right">
-                Save
-            </div>
+        <div class="row border border-dark">
+            <div id="9A" class="col-md-1 text-center">9AM</div>
+            <textarea rows="2" columns="100"  class="col-md-10" type="input"></textarea>
+            <button class="col-md text-center saveButton">Save</button>
         </div>
-        <div class="row">
-            <div class="col-md-1 text-left">
-                10AM
-            </div>
-            <textarea id="morning10" class="col-md-10" type="input">
-                
-            </textarea>
-            <div class="col-md text-right">
-                Save
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1 text-left">
-                11AM
-            </div>
-            <textarea id="morning11" class="col-md-10" type="input">
-                
-            </textarea>
-            <div class="col-md text-right">
-                Save
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1 text-left">
-                12PM
-            </div>
-            <textarea id="afternoon12" class="col-md-10" type="input">
-                
-            </textarea>
-            <div class="col-md text-right">
-                Save
-            </div>
 
+        <div class="row border border-dark">
+            <div class="col-md-1 text-center">10AM</div>
+            <textarea id="10A" class="col-md-10" type="input"></textarea>
+            <button class="col-md text-center saveButton">Save</button>
         </div>
-        <div class="row">
-            <div class="col-md-1 text-left">
-                1PM
-            </div>
-            <textarea id="afternoon1" class="col-md-10" type="input">
-                
-            </textarea>
-            <div class="col-md text-right">
-                Save
-            </div>
+
+        <div class="row border border-dark">
+            <div class="col-md-1 text-center">11AM</div>
+            <textarea id="11A" class="col-md-10" type="input"></textarea>
+            <button class="col-md text-center saveButton">Save</button>
         </div>
-        <div class="row">
-            <div class="col-md-1 text-left">
-                2PM
-            </div>
-            <textarea id="afternoon2" class="col-md-10" type="input">
-                
-            </textarea>
-            <div class="col-md text-right">
-                Save
-            </div>
+
+        <div class="row border border-dark">
+            <div class="col-md-1 text-center">12PM </div>
+            <textarea id="12P" class="col-md-10" type="input"></textarea>
+            <button class="col-md text-center saveButton">Save</button>
         </div>
-        <div class="row">
-            <div class="col-md-1 text-left">
-                3PM
-            </div>
-            <textarea id="afternoon3" class="col-md-10" type="input">
-                
-            </textarea>
-            <div class="col-md text-right">
-                Save
-            </div>
+
+        <div class="row border border-dark">
+            <div class="col-md-1 text-center">1PM</div>
+            <textarea id="1P" class="col-md-10" type="input"></textarea>
+            <button class="col-md text-cente saveButtonr">Save</button>
         </div>
-        <div class="row">
-            <div class="col-md-1 text-left">
-                4PM
-            </div>
-            <textarea id="afternoon4" class="col-md-10" type="input">
-                
-            </textarea>
-            <div class="col-md text-right">
-                Save
-            </div>
+
+        <div class="row border border-dark">
+            <div class="col-md-1 text-center">2PM</div>
+            <textarea id="2P" class="col-md-10" type="input"></textarea>
+            <button class="col-md text-center saveButton">Save</button>
         </div>
-        <div class="row">
-            <div class="col-md-1 text-left">
-                5PM
-            </div>
-            <textarea id="afternoon5" class="col-md-10" type="input">
-                
-            </textarea>
-            <div class="col-md text-right">
-                Save
-            </div>
+
+        <div class="row border border-dark">
+            <div class="col-md-1 text-center">3PM</div>
+            <textarea id="3P" class="col-md-10" type="input"></textarea>
+            <button class="col-md text-center saveButton">Save</button>
+        </div>
+
+        <div class="row border border-dark">
+            <div class="col-md-1 text-center">4PM</div>
+            <textarea id="4P" class="col-md-10" type="input"></textarea>
+            <button class="col-md text-center saveButton">Save</button>
+        </div>
+
+        <div class="row border border-dark">
+            <div class="col-md-1 text-center">5PM</div>
+            <textarea id="5P" class="col-md-10" type="input"></textarea>
+            <button class="col-md text-center saveButton">Save</button>
         </div>
             
         
     </div>
     
+    
     <script type="text/javascript" src="moment.js "></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 </body>
 </html>

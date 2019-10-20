@@ -4602,10 +4602,29 @@
 })));
 
 //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-var dateDisplay = document.getElementById("dateDisplay");
-var topBox = document.getElementById("topBox");
-var date = moment().format('MMMM, Do, YYYY ');
-var time = moment().format("LTS")
-var newDate = dateDisplay.innerHTML = date + time;
+$(document).ready(function(){
+
+//display time and date
+setInterval(function(){
+    $("#dateDisplay").text(moment().format("MMMM D YYYY hh:mm:ss")) 
+    }, 1000);
 
 
+//save button functionality. must write to local storage
+$("button").click(function(){
+    alert("Your Appointment Has Been Saved!")
+});
+
+
+//input display. Past hours need to be grey. Current hour needs to be red. Remaining hours for the day need to be blue/green.
+$("textarea").css("background-color", "grey")
+
+
+
+
+
+
+
+
+
+});
