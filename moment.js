@@ -4603,6 +4603,22 @@
 
 //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 $(document).ready(function(){
+var nineAm = document.getElementById("9A");
+var tenAm = document.getElementById("10A");
+var elevenAm = document.getElementById("11A");
+var twelvePm = document.getElementById("12P");
+var onePm = document.getElementById("1P");
+var twoPm = document.getElementById("2P");
+var threePm = document.getElementById("3P");
+var fourPm = document.getElementById("4P");
+var fivePm = document.getElementById("5p");
+var now = moment().get('hour');
+
+
+console.log(now);
+
+
+
 
 //display time and date
 setInterval(function(){
@@ -4611,13 +4627,29 @@ setInterval(function(){
 
 
 //save button functionality. must write to local storage
-$("button").click(function(){
+
+
+$(".saveButton").click(function(){
     alert("Your Appointment Has Been Saved!")
 });
 
 
 //input display. Past hours need to be grey. Current hour needs to be red. Remaining hours for the day need to be blue/green.
-$("textarea").css("background-color", "grey")
+
+
+$("textarea").css("background-color", "green")
+var timeBox = [nineAm, tenAm, elevenAm, twelvePm, onePm, twoPm, threePm,fourPm, fivePm, sixPm];
+console.log(timeBox)
+
+for(var i = 0; i <timeBox.length; i++){
+    
+    if (now > timeBox[i.hour]){
+        alert("this happened")
+    } else {
+        alert("this didnt happen")
+    };
+};
+
 
 
 
