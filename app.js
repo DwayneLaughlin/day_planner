@@ -35,12 +35,43 @@ $(document).ready(function(){
     $(".saveButton").on("click", function(e){
         e.preventDefault();
         var nineMorn = $("#9A").val();
-        console.log("on click: " + nineMorn)
+        var tenMorn = $("#10A").val();
+        var elevenMorn = $("#11A").val()
+        var twelveNoon = $("#12P").val()
+        var oneNoon = $("#1P").val()
+        var twoNoon = $("#2P").val()
+        var threeNoon = $("#3P").val()
+        var fourNoon = $("#4P").val()
+        var fiveNoon = $("#5P").val()
 
      localStorage.setItem("whatever", nineMorn);
-     var showing = localStorage.getItem("whatever");
+     localStorage.getItem("whatever");
+
+     localStorage.setItem("elevenSlot", elevenMorn);
+     localStorage.getItem("elevenSlot");
+
+     localStorage.setItem("twelveSlot", twelveNoon);
+     localStorage.getItem("twelveSlot");
+
+     localStorage.setItem("oneSlot", oneNoon);
+     localStorage.getItem("oneSlot");
+
+     localStorage.setItem("twoSlot", twoNoon);
+     localStorage.getItem("twoSlot");
+
+     localStorage.setItem("threeSlot", threeNoon);
+     localStorage.getItem("threeSlot");
+
+     localStorage.setItem("fourSlot", fourNoon);
+     localStorage.getItem("fourSlot");
+
+     localStorage.setItem("fiveSlot", fiveNoon);
+     localStorage.getItem("fiveSlot");
+
+     localStorage.setItem("tenSlot", tenMorn);
+     localStorage.getItem("tenSlot");
      
-    console.log("Local Storage: " + showing);
+   
      
     
         
