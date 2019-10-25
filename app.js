@@ -43,7 +43,7 @@ $(document).ready(function(){
     var fivePm = document.getElementById("5p");
  
     
-    
+    var nineMorn = $("#9A").val()
     
     
     
@@ -86,30 +86,79 @@ $(document).ready(function(){
 
     
     
+    var nineTime = moment().set("hour",9).format("H");
+    var tenTime = moment().set("hour",10).format("H")
+    var elevenTime = moment().set("hour",11).format("H")
+    var twelveTime = moment().set("hour",12).format("H")
+    var oneTime = moment().set("hour",13).format("H")
+    var twoTime = moment().set("hour",14).format("H")
+    var threeTime = moment().set("hour",15).format("H")
+    var fourTime = moment().set("hour",16).format("H")
+    var fiveTime = moment().set("hour",17).format("H")
     
     //input display. Past hours need to be grey. Current hour needs to be red. Remaining hours for the day need to be blue/green.
     
     
-    $("textarea").css("background-color", "green")
+    
 
-    var now = moment().get('hour');
-        var nine = moment().set("hour",9);
-        var nineTime = Number(nine)
-        console.log(nineTime)
-    //  var timeBox = [nineAm, tenAm, elevenAm, twelvePm, onePm, twoPm, threePm,fourPm, fivePm];
-    //  console.log(timeBox)
+     var now = moment().format("H");
+
+         console.log(nineTime, now)
+   
     
-    // for(var i = 0; i <timeBox.length; i++){
-        
-    //    if (Number (now) > ){
-    //         alert("this happened")
-    //     } else {
-    //         alert("this didnt happen")
-    //     };
-    // };
+    if (now > nineTime){
+        $("#9A").css("background-color", "grey")
+    } else if (now === nineTime){
+        $("#9A").css("background-color", "red")
+    } else {$("#9A").css("background-color", "green")};
     
-    
-    
+    if (now > tenTime){
+        $("#10A").css("background-color", "grey")
+    } else if (now === tenTime){
+        $("#10A").css("background-color", "red")
+    } else {$("#10A").css("background-color", "green")};
+
+    if (now > elevenTime){
+        $("#11A").css("background-color", "grey")
+    } else if (now === elevenTime){
+        $("#11A").css("background-color", "red")
+    } else {$("#11A").css("background-color", "green")};
+
+    if (now > twelveTime){
+        $("#12P").css("background-color", "grey")
+    } else if (now === twelveTime){
+        $("#12P").css("background-color", "red")
+    } else {$("#12P").css("background-color", "green")};
+
+    if (now > oneTime){
+        $("#1P").css("background-color", "grey")
+    } else if (now === oneTime){
+        $("#1P").css("background-color", "red")
+    } else {$("#1P").css("background-color", "green")};
+
+    if (now > twoTime){
+        $("#2P").css("background-color", "grey")
+    } else if (now === twoTime){
+        $("#2P").css("background-color", "red")
+    } else {$("#2P").css("background-color", "green")};
+
+    if (now > threeTime){
+        $("#3P").css("background-color", "grey")
+    } else if (now === threeTime){
+        $("#3P").css("background-color", "red")
+    } else {$("#3P").css("background-color", "green")};
+
+    if (now > fourTime){
+        $("#4P").css("background-color", "grey")
+    } else if (now === fourTime){
+        $("#4P").css("background-color", "red")
+    } else {$("#4P").css("background-color", "green")};
+
+    if (now > fiveTime){
+        $("#5P").css("background-color", "grey")
+    } else if (now === fiveTime){
+        $("#5P").css("background-color", "red")
+    } else {$("#5P").css("background-color", "green")};
     
     
     
