@@ -1,7 +1,37 @@
 //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-console.log("Load")
+
 $(document).ready(function(){
+
+       var whatever = localStorage.getItem("whatever");
+       $("#9A").val(whatever);
+
+       var tenSlot = localStorage.getItem("tenSlot");
+       $("#10A").val(tenSlot);
+
+       var elevenSlot = localStorage.getItem("elevenSlot");
+       $("#11A").val(elevenSlot);
+
+       var twelveSlot = localStorage.getItem("twelveSlot");
+       $("#12p").val(twelveSlot);
+
+       var oneSlot = localStorage.getItem("oneSlot");
+       $("#1P").val(oneSlot);
+
+       var twoSlot = localStorage.getItem("twoSlot");
+       $("#2P").val(twoSlot);
+
+       var threeSlot = localStorage.getItem("threeSlot");
+       $("#3P").val(threeSlot);
+
+       var fourSlot = localStorage.getItem("fourSlot");
+       $("#4P").val(fourSlot);
+
+       var fiveSlot = localStorage.getItem("fiveSlot");
+       $("#5P").val(fiveSlot);
+   
+
+   
     var nineAm = document.getElementById("9A");
     var tenAm = document.getElementById("10A");
     var elevenAm = document.getElementById("11A");
@@ -12,7 +42,7 @@ $(document).ready(function(){
     var fourPm = document.getElementById("4P");
     var fivePm = document.getElementById("5p");
  
-    // var now = moment().get('hour');
+    
     
     
     
@@ -28,12 +58,10 @@ $(document).ready(function(){
     
     //save button functionality. must write to local storage
     
-    
-    
-    
-    
     $(".saveButton").on("click", function(e){
         e.preventDefault();
+        
+
         var nineMorn = $("#9A").val();
         var tenMorn = $("#10A").val();
         var elevenMorn = $("#11A").val()
@@ -42,41 +70,20 @@ $(document).ready(function(){
         var twoNoon = $("#2P").val()
         var threeNoon = $("#3P").val()
         var fourNoon = $("#4P").val()
-        var fiveNoon = $("#5P").val()
+        var fiveNoon = $("#5P").val();
 
      localStorage.setItem("whatever", nineMorn);
-     localStorage.getItem("whatever");
-
      localStorage.setItem("elevenSlot", elevenMorn);
-     localStorage.getItem("elevenSlot");
-
      localStorage.setItem("twelveSlot", twelveNoon);
-     localStorage.getItem("twelveSlot");
-
      localStorage.setItem("oneSlot", oneNoon);
-     localStorage.getItem("oneSlot");
-
      localStorage.setItem("twoSlot", twoNoon);
-     localStorage.getItem("twoSlot");
-
      localStorage.setItem("threeSlot", threeNoon);
-     localStorage.getItem("threeSlot");
-
      localStorage.setItem("fourSlot", fourNoon);
-     localStorage.getItem("fourSlot");
-
      localStorage.setItem("fiveSlot", fiveNoon);
-     localStorage.getItem("fiveSlot");
-
      localStorage.setItem("tenSlot", tenMorn);
-     localStorage.getItem("tenSlot");
-     
-   
-     
-    
-        
-       
     });
+
+
     
     
     
@@ -84,17 +91,22 @@ $(document).ready(function(){
     
     
     $("textarea").css("background-color", "green")
-    // var timeBox = [nineAm, tenAm, elevenAm, twelvePm, onePm, twoPm, threePm,fourPm, fivePm];
-    // console.log(timeBox)
+
+    var now = moment().get('hour');
+        var nine = moment().set("hour",9);
+        var nineTime = Number(nine)
+        console.log(nineTime)
+    //  var timeBox = [nineAm, tenAm, elevenAm, twelvePm, onePm, twoPm, threePm,fourPm, fivePm];
+    //  console.log(timeBox)
     
-    //for(var i = 0; i <timeBox.length; i++){
+    // for(var i = 0; i <timeBox.length; i++){
         
-      //  if (now > timeBox[i.hour]){
-            //alert("this happened")
-        //} else {
-            //alert("this didnt happen")
-        //};
-    //};
+    //    if (Number (now) > ){
+    //         alert("this happened")
+    //     } else {
+    //         alert("this didnt happen")
+    //     };
+    // };
     
     
     
