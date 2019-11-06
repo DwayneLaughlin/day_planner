@@ -32,15 +32,7 @@ $(document).ready(function(){
    
 
    
-    var nineAm = document.getElementById("9A");
-    var tenAm = document.getElementById("10A");
-    var elevenAm = document.getElementById("11A");
-    var twelvePm = document.getElementById("12P");
-    var onePm = document.getElementById("1P");
-    var twoPm = document.getElementById("2P");
-    var threePm = document.getElementById("3P");
-    var fourPm = document.getElementById("4P");
-    var fivePm = document.getElementById("5p");
+   
  
     
     
@@ -86,7 +78,7 @@ $(document).ready(function(){
 
     
     
-    var nineTime = moment().set("hour",9).format("H");
+    var nineTime = moment().set("hour",9).format("HH");
     var tenTime = moment().set("hour",10).format("H")
     var elevenTime = moment().set("hour",11).format("H")
     var twelveTime = moment().set("hour",12).format("H")
@@ -101,7 +93,7 @@ $(document).ready(function(){
     
     
 
-     var now = moment().format("H");
+     var now = moment().format("HH");
 
       
    
@@ -159,6 +151,7 @@ $(document).ready(function(){
     } else if (now === fiveTime){
         $("#5P").css("background-color", "red")
     } else {$("#5P").css("background-color", "green")};
+
     
     
     
