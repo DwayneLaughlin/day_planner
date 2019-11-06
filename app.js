@@ -43,7 +43,7 @@ $(document).ready(function(){
     var fivePm = document.getElementById("5p");
  
     
-    var nineMorn = $("#9A").val()
+    
     
     
     
@@ -103,7 +103,7 @@ $(document).ready(function(){
 
      var now = moment().format("H");
 
-         console.log(nineTime, now)
+      
    
     
     if (now > nineTime){
