@@ -4,7 +4,6 @@ This application allows users to save notes and appointments during a work day. 
 Depending on the time of day the section for each hour will display a different color. The current hour is in red. Upcoming hours are in green. Hours that have passed are in grey. Moment.js was integrated into the javascript for the time-based functionality. 
 
 
-![]
-(https://laughlinportfolio.herokuapp.com/static/media/dayplan.eb12a4d9.png)
+![](https://laughlinportfolio.herokuapp.com/static/media/dayplan.eb12a4d9.png)
 
 Deployed App: https://dwaynelaughlin.github.io/day_planner/
